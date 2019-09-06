@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>暴风影音-播放</title>
+    <link rel="stylesheet" href="../css/playPage.css" type="text/css">
+    <link rel="icon" href="../favicon.ico" type="text/css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/upTop.js"></script>
+
+</head>
+
+<body>
+    <!-- 固定顶栏 -->
+    <div class="header clearFix">
+        <div class="nav-header wrap clearFix">
+            <h1 class="logo "><a href="../index.html">暴风影音</a></h1>
+            <ul class="logo-item clearFix">
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="navigator" href="#">导航</a></li>
+            </ul>
+            <div class="searchbar">
+                <input id="search" type="text" placeholder="高粱红了">
+                <a href="#" id="btn-search"></a>
+            </div>
+
+             <ul class="item-behavior">
+                <li><a class="behavior0" href="#">看过</a></li>
+                <li><a class="behavior1" href="#">收藏</a></li>
+                <li><a class="behavior2" href="#">客户端</a></li>
+                <li><a class="behavior3" href="./login.html">登录/注册</a></li>
+             </ul>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <!-- 播放标题 -->
+        <div class="play-tit wrap">
+            <h2 class="tit"><a href="#">羞羞的铁拳</a></h2>
+            <p><a href="#">电影</a><em>></em>
+                <a href="#">内地</a><em>></em>
+                <a href="#">喜剧/剧情</a><em>></em>
+                <a href="#" >羞羞的铁拳</a></p>
+        </div>
+        <!-- 播放中心 -->
+        <div class="play-center clearFix wrap">
+            <!-- 播放内容盒子 -->
+            <div class="play-left ">
+                <div class="left-window">
+                    <video src="../video/itukanokoto_b.mp4" loop=true
+                           autoplay width="100%" height="100%" controls="controls" class="play-window">
+                    </video>
+                </div>
+            </div>
+            <!-- 右侧详情 及选集 -->
+            <div class="play-right">
+
+                <div class="right-window">
+                    <dl>
+                        <dt class="blue">选集</dt>
+                        <dt class="grey">商品</dt>
+
+                    </dl>
+                    <div class="menu-list" id="menu-list">
+                        <div class="menu-window">
+                            <div class="great-comment">
+                                <p class="best-comm">
+                                    「影片中安排的笑点都是原创，没有微博微信疯转的老段子，笑点也不会让观众感觉尴尬。原创的梗衔接自然，配合剧情的矛盾转折，不会产生违和感。」</p>
+                                <p class="best-from">来自：豆瓣电影评论</p>
+                            </div>
+
+
+                            <div class="great-recommend">
+                                <p class="best-recommend">精彩推荐 :</p>
+                                <ul class="menu-items">
+
+
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                        <!-- 滚动条 -->
+                        <div id="out" class="out">
+                            <div class="in" id="scroller"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="play-bottom wrap clearFix">
+            <div class="play-select clearFix">
+                <ul class="select-left clearFix">
+                    <li><a class="like" href="#"><em data-type="like">2046</em></a></li>
+                    <li><a class="dislike" href="#"><em data-type="dislike">1268</em></a></li>
+                    <li><a class="collect" href="#"><em></em>收藏</a></li>
+                </ul>
+                <ul class="select-right clearFix">
+                    <li><a href="#" class="downl"><em></em>下载</a></li>
+                    <li><a href="#" class="share"><em></em>分享</a></li>
+                    <li><a href="#" class="known"><em></em>剧透</a></li>
+                </ul>
+
+
+            </div>
+
+            <a href="#" class="download-select"></a>
+
+        </div>
+    </div>
+    <!-- 主影片 -->
+    <div class="playMain wrap">
+        <div class="mainLeft clearFix">
+
+            <!-- 猜你喜欢 -->
+            <div class="guessUlike">
+                <div class="guess-tit">
+                    <div class="g-tit">猜你喜欢</div>
+
+                </div>
+                <div class="guessFilm">
+
+                </div>
+
+
+            </div>
+
+            <!-- 热门推荐 -->
+            <div class="guessUlike Hot clearFix">
+                <div class="guess-tit hot">
+                    <div class="g-tit hot-tit">热门推荐 <a href="#">更多 >></a></div>
+
+                </div>
+                <div class="hotFilm">
+                    <ul class="h-recommend">
+
+                    </ul>
+
+
+
+
+                </div>
+
+            </div>
+            <!-- 电影榜 -->
+            <div class=" movieRank">
+                <div class="guess-tit">
+                    <div class="g-tit">电影榜<a href="#">更多 >></a></div>
+                    <dl class="movie-list clearFix">
+
+                    </dl>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!-- 右侧评论 -->
+        <div class="mainRight">
+            <div class="comment-tit clearFix">
+                <div class="g-tit clearFix">评论 <span>(共<i class="account">276</i>条)</span>
+                    <span class="word-surplus">还可以输入<i style="color: #1a9eff;">140</i>字</span></div>
+
+            </div>
+
+
+            <div class="mYcomment">
+                <div class="comment-pannel">
+                    <textarea name="" maxlength="140" id="comments" cols="30" rows="10">快来吐个槽吧!</textarea>
+                    <div class="play-submit">
+                        <div class="submit-comment">
+                            <input type="text" class="v-input" value="请输入验证码">
+                            <img src="../image/playPage/yzm1.png" alt="">
+                            <a href="" class="change">换一个</a>
+                        </div>
+
+                        <div class="submit-btn">
+                            <a href="#">发表评论</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdPhone clearFix">
+
+                    评论需绑定手机号<a>立即绑定手机</a></p>
+                </div>
+            </div>
+
+            <div class="sort-main">
+                <div class="sort-item">
+                    <a href="javascript:;" class="blue" id="fromHot" >按热度</a>
+                    <a href="javascript:;" id="fromNew">按最新</a>
+                </div>
+
+            </div>
+
+            <div class="comments-on">
+                <ul class="pages">
+
+
+
+
+
+                </ul>
+
+
+
+            </div>
+            <div class="switch">
+                <div class="switch-left">
+                    <input type="text" id="jump">
+                    <span>
+                        /
+                        <em class="total-page"></em>
+
+                    </span>
+                    <a href="javascript:;" id="sure">确定</a>
+                </div>
+
+
+                <div class="switch-right">
+                    <a href="javascript:;" id="pre" class="previous-page">上一页</a>
+
+                    <a href="javascript:;"  id = "next"class="next-page">下一页</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="line wrap"></div>
+    <div class="links wrap">
+        <p><a href="#">&copy; by.liu 2019.8.28</a></p>
+    </div>
+    <!-- 导航向上 -->
+    <div  id ="up"class="up"></div>
+
+    <script src="../js/rolling.js"></script>
+    <script src="../js/playPage.js"></script>
+
+</body>
+
+</html>

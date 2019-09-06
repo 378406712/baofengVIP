@@ -1,0 +1,63 @@
+.content {
+  background-color: #fff;
+}
+.content .tab1 {
+  padding: 20px 0 30px;
+}
+.content .tab1 ul {
+  width: 1000px;
+  height: 28px;
+}
+.content .tab1 ul li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content .tab1 ul li a {
+  display: block;
+  width: auto;
+  padding: 0 21px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #000;
+}
+.content .tab1 ul li .blue {
+  color: #fff;
+  background: #0b68c8;
+}
+.content .tab2 {
+  padding: 0 0 30px;
+}
+.content .tab2 .tab-list {
+  clear: both;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #dedede;
+  background: #f8f8f8;
+  margin-bottom: 30px;
+  overflow: visible;
+  margin: 0 20px;
+}
+.content .tab2 .tab-list li {
+  float: left;
+}
+.content .tab2 .tab-list li a {
+  font-size: 14px;
+  width: auto;
+  padding: 0 30px;
+  color: #0b68c8;
+}
+.BigNum {
+  font-family: Georgia;
+  font-size: 20px;
+  color: #f60;
+  font-weight: 300;
+}
+.white {
+  background-color: #fff;
+  border-right: 1px solid #dedede;
+  height: 41px;
+  border-top: 4px solid #0b68c8;
+  color: #000;
+}

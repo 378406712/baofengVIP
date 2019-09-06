@@ -1,0 +1,12 @@
+[
+  {"src":"./image/running1.jpg","s_src":"./image/run-small1.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running2.jpg","s_src":"./image/run-small2.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running3.jpg","s_src":"./image/run-small3.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running4.jpg","s_src":"./image/run-small4.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running5.jpg","s_src":"./image/run-small5.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running6.jpg","s_src":"./image/run-small6.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running7.jpg","s_src":"./image/run-small7.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running8.jpg","s_src":"./image/run-small8.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running9.jpg","s_src":"./image/run-small9.jpg","links":"./html/playPage.html"},
+  {"src":"./image/running1.jpg","s_src":"./image/run-small1.jpg","links":"./html/playPage.html"}
+]

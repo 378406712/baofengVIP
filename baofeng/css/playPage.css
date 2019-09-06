@@ -1,0 +1,941 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  color: #191919;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+a {
+  display: block;
+  color: #989898;
+  text-decoration: none;
+}
+.clearFix:before,
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+img {
+  border: 0;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+.wrap {
+  width: 1180px;
+  margin: 0 auto;
+}
+.fl-l {
+  float: left;
+}
+.fl-r {
+  float: right;
+}
+.header {
+  background-color: #242428;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header .nav-header {
+  height: 55px;
+}
+.header .nav-header .logo {
+  float: left;
+  width: 119px;
+  height: 40px;
+  margin-top: 14px;
+}
+.header .nav-header .logo a {
+  display: block;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: -181px -124px;
+  text-indent: -999px;
+}
+.header .nav-header .logo-item {
+  float: left;
+  width: 240px;
+  height: 40px;
+  margin-top: 14px;
+}
+.header .nav-header .logo-item li {
+  float: left;
+  margin-left: 15px;
+  text-align: right;
+}
+.header .nav-header .logo-item li a {
+  width: 64px;
+  height: 30px;
+  line-height: 30px;
+}
+.header .nav-header .logo-item li .navigator {
+  background: url("../image/playPage/indexicons_17.png") no-repeat;
+  background-position: -334px -554px;
+  width: 70px;
+  padding-top: 0;
+  padding-right: 24px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.header .nav-header .searchbar {
+  float: left;
+  width: 470px;
+  margin-top: 14px;
+}
+.header .nav-header .searchbar #search {
+  width: 381px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  color: #fff;
+  font-size: 12px;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #383a42;
+}
+.header .nav-header .searchbar #btn-search {
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: -115px -40px;
+  width: 88px;
+  height: 40px;
+  display: inline-block;
+}
+.header .nav-header .item-behavior {
+  line-height: 40px;
+  width: 272px;
+  height: 40px;
+  float: right;
+  margin-top: 10px;
+}
+.header .nav-header .item-behavior li {
+  float: left;
+}
+.header .nav-header .item-behavior li a {
+  text-align: center;
+  padding-top: 12px;
+  height: 39px;
+  font-size: 12px;
+  margin-left: 22px;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: -109px 0;
+}
+.header .nav-header .item-behavior li .behavior0 {
+  background-position: -112px 0;
+}
+.header .nav-header .item-behavior li .behavior1 {
+  background-position: -167px 0;
+}
+.header .nav-header .item-behavior li .behavior2 {
+  background-position: -216px 0;
+}
+.header .nav-header .item-behavior li .behavior3 {
+  background-position: -259px 0;
+}
+.content {
+  width: 100%;
+  background-color: #383a42;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+.content .play-tit {
+  padding-top: 55px;
+  overflow: hidden;
+}
+.content .play-tit .tit {
+  padding-top: 6px;
+  padding-right: 40px;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.content .play-tit .tit a {
+  color: #fff;
+  font-weight: 100;
+  display:inline;
+}
+.content .play-tit .tit a:hover {
+  color: #1a9eff;
+}
+.content .play-tit p {
+  height: 30px;
+  line-height: 30px;
+}
+.content .play-tit p a,
+.content .play-tit p em {
+  float: left;
+  color: #989898;
+  margin-right: 12px;
+}
+.content .play-tit p a:hover {
+  color: #1a9eff;
+}
+.content .play-center {
+  background-color: #242428;
+}
+.content .play-center .play-left {
+  float: left;
+  position: relative;
+  width: 860px;
+  height: 525px;
+}
+.content .play-center .play-left .left-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 860px;
+  height: 525px;
+}
+.content .play-center .play-right {
+  position: relative;
+  width: 320px;
+  height: 525px;
+  float: left;
+  overflow: hidden;
+}
+.content .play-center .play-right dl {
+  width: 320px;
+  height: 50px;
+}
+.content .play-center .play-right dl dt {
+  cursor: pointer;
+  float: left;
+  width: 160px;
+  height: 50px;
+  line-height: 49px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Microsoft Yahei", "宋体", Arial, Verdana;
+}
+.content .play-center .play-right .menu-list {
+  overflow: hidden;
+  width: 320px;
+  height: 474px;
+  position: relative;
+}
+.content .play-center .play-right .menu-list .menu-window {
+  position: absolute;
+  width: 320px;
+  height: 783px;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 12px;
+  overflow: hidden;
+}
+.content .play-center .play-right .menu-list .menu-window .great-comment {
+  width: 282px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  overflow: hidden;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.content .play-center .play-right .menu-list .menu-window .great-comment .best-comm {
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Microsoft Yahei", "宋体", Arial, Verdana;
+}
+.content .play-center .play-right .menu-list .menu-window .great-comment .best-from {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .best-recommend {
+  width: 268px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  color: #b3b3b3;
+  background: url("../image/playPage/indexicons_17.png") no-repeat;
+  background-position: -396px -208px;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items {
+  width: 268px;
+  border-top: #383a42 1px solid;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items li {
+  width: 268px;
+  height: 49px;
+  line-height: 49px;
+  margin-bottom: 2px;
+  border-bottom: #383a42 1px solid;
+  overflow: hidden;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items li a {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items li em {
+  float: right;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: -284px -63px;
+  padding-left: 15px;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items li:hover a {
+  color: #1a9eff;
+}
+.content .play-center .play-right .menu-list .menu-window .great-recommend .menu-items li:hover em {
+  background-position: -204px -63px;
+}
+.content .play-center .play-right .menu-list .out {
+  height: 474px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16px;
+  height: 584px;
+  background-color: #2b2c31;
+  z-index: 8;
+}
+.content .play-center .play-right .menu-list .out .in {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 52px;
+  border-radius: 10px;
+  right: 3px;
+  background-color: #3d4047;
+}
+.content .play-bottom {
+  padding-bottom: 20px;
+  height: 66px;
+}
+.content .play-bottom .play-select {
+  width: 860px;
+  height: 45px;
+  background-color: #242428;
+  float: left;
+}
+.content .play-bottom .play-select .select-left {
+  float: left;
+  padding-left: 22px;
+}
+.content .play-bottom .play-select .select-left li {
+  float: left;
+}
+.content .play-bottom .play-select .select-left li a {
+  font-size: 12px;
+  width: 70px;
+  height: 45px;
+  line-height: 45px;
+}
+.content .play-bottom .play-select .select-left li a em {
+  padding-left: 25px;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: 0 0;
+}
+.content .play-bottom .play-select .select-left li a:hover {
+  color: #1a9eff;
+}
+.content .play-bottom .play-select .select-left li a:hover em {
+  background-position: 0 -272px;
+}
+.content .play-bottom .play-select .select-left li .dislike em {
+  background-position: 0 -35px;
+}
+.content .play-bottom .play-select .select-left li .dislike:hover em {
+  background-position: 0 -307px;
+}
+.content .play-bottom .play-select .select-left li .collect {
+  width: 94px;
+}
+.content .play-bottom .play-select .select-left li .collect em {
+  background-position: 4px -68px;
+}
+.content .play-bottom .play-select .select-left li .collect:hover em {
+  background-position: 4px -340px;
+}
+.content .play-bottom .play-select .select-right {
+  float: right;
+  padding-left: 22px;
+}
+.content .play-bottom .play-select .select-right li {
+  float: left;
+}
+.content .play-bottom .play-select .select-right li a {
+  font-size: 12px;
+  width: 70px;
+  height: 45px;
+  line-height: 45px;
+}
+.content .play-bottom .play-select .select-right li a em {
+  padding-left: 25px;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: 0 -160px;
+}
+.content .play-bottom .play-select .select-right li a:hover {
+  color: #1a9eff;
+}
+.content .play-bottom .play-select .select-right li a:hover em {
+  background-position: 0 -432px;
+}
+.content .play-bottom .play-select .select-right li .share em {
+  background-position: 0 -233px;
+}
+.content .play-bottom .play-select .select-right li .share:hover em {
+  background-position: 0 -505px;
+}
+.content .play-bottom .play-select .select-right li .known {
+  width: 94px;
+}
+.content .play-bottom .play-select .select-right li .known em {
+  background-position: 4px -198px;
+}
+.content .play-bottom .play-select .select-right li .known:hover em {
+  background-position: 4px -470px;
+}
+.content .play-bottom .download-select {
+  float: right;
+  width: 320px;
+  height: 45px;
+  background: url("../image/playPage/play_download_22.png") no-repeat;
+  background-position: 0 0;
+}
+.content .play-bottom .download-select:hover {
+  opacity: .9;
+}
+.playMain {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.playMain .mainLeft {
+  float: left;
+  width: 780px;
+}
+.playMain .mainLeft .guessUlike {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.playMain .mainLeft .guessUlike .guess-tit {
+  margin-bottom: 16px;
+}
+.playMain .mainLeft .guessUlike .guess-tit .g-tit {
+  background: url(../image/playPage/indexicons_17.png) no-repeat;
+  background-position: -396px -202px;
+  font-size: 26px;
+  padding-left: 15px;
+  font-weight: 400;
+}
+.playMain .mainLeft .guessFilm,
+.playMain .mainLeft .hotFilm {
+  margin-left: -20px;
+}
+.playMain .mainLeft .guessFilm ul,
+.playMain .mainLeft .hotFilm ul {
+  padding-bottom: 5px;
+}
+.playMain .mainLeft .guessFilm ul li,
+.playMain .mainLeft .hotFilm ul li {
+  width: 180px;
+  float: left;
+  margin-left: 20px;
+}
+.playMain .mainLeft .guessFilm ul li a img,
+.playMain .mainLeft .hotFilm ul li a img {
+  width: 180px;
+  height: 240px;
+}
+.playMain .mainLeft .guessFilm ul li .detail,
+.playMain .mainLeft .hotFilm ul li .detail {
+  width: 180px;
+  height: 50px;
+  position: relative;
+}
+.playMain .mainLeft .guessFilm ul li .detail p,
+.playMain .mainLeft .hotFilm ul li .detail p {
+  font-size: 14px;
+}
+.playMain .mainLeft .guessFilm ul li .detail p a,
+.playMain .mainLeft .hotFilm ul li .detail p a {
+  color: #191919;
+}
+.playMain .mainLeft .guessFilm ul li .detail p a:hover,
+.playMain .mainLeft .hotFilm ul li .detail p a:hover {
+  color: #0b68c8;
+}
+.playMain .mainLeft .guessFilm ul li .detail em,
+.playMain .mainLeft .hotFilm ul li .detail em {
+  font-size: 12px;
+  color: #999;
+  width: 168px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  font-weight: 400;
+}
+.playMain .mainLeft .guessFilm ul li .detail h3,
+.playMain .mainLeft .hotFilm ul li .detail h3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #f60;
+}
+.playMain .mainLeft .guessFilm ul li .detail h3 i,
+.playMain .mainLeft .hotFilm ul li .detail h3 i {
+  font-size: 12px;
+}
+.playMain .mainLeft .Hot {
+  float: left;
+  width: 600px;
+}
+.playMain .mainLeft .Hot .hot-tit a {
+  display: inline;
+  font-size: 14px;
+  margin-left: 40px;
+  color: #191919;
+}
+.playMain .mainLeft .Hot .hot-tit a:hover {
+  color: #1a9eff;
+}
+.playMain .mainLeft .Hot .hotFilm {
+  width: 800px;
+  height: 465px;
+  margin-left: -20px;
+  float: left;
+  overflow: hidden;
+}
+.playMain .mainLeft .Hot .hotFilm ul li {
+  width: 180px;
+  float: left;
+  margin-bottom: -20px;
+  margin-left: 20px;
+}
+.playMain .mainLeft .Hot .hotFilm ul li .brick-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.playMain .mainLeft .Hot .hotFilm ul li .brick-item a img {
+  width: 180px!important;
+  height: 135px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+}
+.playMain .mainLeft .Hot .hotFilm ul li .brick-item a .shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  height: 52px;
+  box-shadow: inset 0px -30px 12px rgba(0, 0, 0, 0.5);
+}
+.playMain .mainLeft .Hot .hotFilm ul li .brick-item a::after {
+  content: attr(datas);
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  display: block;
+  color: #fff;
+  font-size: 12px;
+}
+.playMain .mainLeft .movieRank {
+  float: left;
+  width: 180px;
+}
+.playMain .mainLeft .movieRank .guess-tit .g-tit {
+  margin-bottom: 16px;
+  background: url(../image/playPage/indexicons_17.png) no-repeat;
+  background-position: -396px -202px;
+  font-size: 26px;
+  padding-left: 15px;
+  font-weight: 400;
+}
+.playMain .mainLeft .movieRank .guess-tit .g-tit a {
+  display: inline;
+  font-size: 14px;
+  margin-left: 30px;
+  color: #191919;
+}
+.playMain .mainLeft .movieRank .guess-tit .g-tit a:hover {
+  color: #1a9eff;
+}
+.playMain .mainLeft .movie-list {
+  height: 20px;
+  line-height: 20px;
+  display: block;
+}
+.playMain .mainLeft .movie-list dt {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 13px;
+}
+.playMain .mainLeft .movie-list dt .scores {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fc4413;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.playMain .mainLeft .movie-list dt .icon-num {
+  float: left;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  background-color: #989898;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 100%;
+}
+.playMain .mainLeft .movie-list dt .movie-name {
+  font-size: 14px;
+  width: 130px;
+  height: 20px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+  display: inline-block;
+  overflow: hidden;
+}
+.playMain .mainLeft .movie-list dd {
+  display: none;
+  height: 135px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.playMain .mainLeft .movie-list dd a img {
+  border-radius: 3px;
+  width: 180px;
+  height: 135px;
+}
+.playMain .mainLeft .movie-list dd a .hot-movie-num {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 100%;
+  background-color: #1a9eff;
+  color: #fff;
+  text-align: center;
+  left: 10px;
+  bottom: 7px;
+  font-weight: 700;
+  z-index: 2;
+}
+.playMain .mainLeft .movie-list dd a .hot-movie-shadow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 30px;
+  background-color: #000;
+  opacity: .5;
+}
+.playMain .mainLeft .movie-list dd .movie-titles {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  z-index: 2;
+}
+.playMain .mainLeft .movie-list dd .movie-titles a {
+  color: #fff;
+}
+.playMain .mainRight {
+  float: right;
+}
+.playMain .mainRight .comment-tit {
+  margin-bottom: 16px;
+}
+.playMain .mainRight .comment-tit .g-tit {
+  float: left;
+  background: url(../image/playPage/indexicons_17.png) no-repeat;
+  background-position: -396px -202px;
+  font-size: 26px;
+  padding-left: 15px;
+  font-weight: 400;
+  width: 100%;
+}
+.playMain .mainRight .comment-tit .g-tit .word-surplus {
+  float: right;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.playMain .mainRight .mYcomment {
+  margin-bottom: 20px;
+}
+.playMain .mainRight .mYcomment .comment-pannel #comments {
+  display: block;
+  resize: none;
+  width: 368px;
+  height: 102px;
+  line-height: 22px;
+  box-sizing: content-box;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border: #c8c8c8 1px solid;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #7d7d7d;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit {
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-comment {
+  float: left;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-comment .v-input {
+  font-size: 12px;
+  float: left;
+  width: 78px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 3px;
+  border: #c8c8c8 1px solid;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-comment img {
+  float: left;
+  width: 60px;
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-comment .change {
+  display: inline;
+  color: #1a9eff;
+  text-decoration: underline;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-btn {
+  float: right;
+}
+.playMain .mainRight .mYcomment .comment-pannel .play-submit .submit-btn a {
+  width: 82px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #1a9eff;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+}
+.playMain .mainRight .mYcomment .bdPhone {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+}
+.playMain .mainRight .mYcomment .bdPhone a {
+  display: inline-block;
+  color: #1a9eff;
+  text-decoration: underline;
+}
+.playMain .mainRight .sort-main {
+  height: 35px;
+  line-height: 30px;
+  border-bottom: #e8e8e8 1px solid;
+}
+.playMain .mainRight .sort-main .sort-item {
+  width: 156px;
+  height: 36px;
+}
+.playMain .mainRight .sort-main .sort-item a {
+  float: left;
+  width: 78px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+}
+.playMain .mainRight .comments-on {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.playMain .mainRight .comments-on li {
+  position: relative;
+  width: 380px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: #b6b6b6 1px solid;
+  color: #404040;
+  font-size: 12px;
+  overflow: hidden;
+}
+.playMain .mainRight .comments-on li .personal-info {
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.playMain .mainRight .comments-on li .personal-info .pichead {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+.playMain .mainRight .comments-on li .personal-info .pichead img {
+  width: 100%;
+  border-radius: 100%;
+}
+.playMain .mainRight .comments-on li .personal-info .dates {
+  float: left;
+}
+.playMain .mainRight .comments-on li .personal-info .dates p:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #191919;
+}
+.playMain .mainRight .comments-on li .personal-info .dates p:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 400;
+  color: #989898;
+}
+.playMain .mainRight .comments-on li .yourComments {
+  width: 380px;
+  font-size: 14px;
+  color: #5e5e5e;
+  line-height: 20px;
+  overflow: hidden;
+  font-weight: 400;
+}
+.playMain .mainRight .comments-on li .myLikes {
+  color: #d8d8d8;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+}
+.playMain .mainRight .comments-on li .myLikes .comments-support {
+  cursor: pointer;
+  float: right;
+}
+.playMain .mainRight .comments-on li .myLikes .comments-support .zan {
+  float: left;
+  width: 15px;
+  height: 15px;
+  background: url("../image/playPage/playicons_18.png") no-repeat;
+  background-position: -285px -190px;
+}
+.playMain .mainRight .comments-on li .myLikes .comments-support .jubao {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  color: #191919;
+}
+.playMain .mainRight .comments-on li .myLikes .comments-support .jubao:hover {
+  color: #1a9eff;
+}
+.playMain .mainRight .comments-on li .myLikes .comments-support:hover .zan {
+  background-position: -285px -166px;
+}
+.playMain .mainRight .switch .switch-left {
+  float: left;
+}
+.playMain .mainRight .switch .switch-left #jump {
+  border: #d8d8d8 1px solid;
+  width: 28px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+.playMain .mainRight .switch .switch-left #sure {
+  display: inline-block;
+  width: 58px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 20px;
+  border: #d8d8d8 1px solid;
+  text-align: center;
+}
+.playMain .mainRight .switch .switch-left #sure:hover {
+  color: #1a9eff;
+  border-color: #1a9eff;
+}
+.playMain .mainRight .switch .switch-right {
+  float: right;
+}
+.playMain .mainRight .switch .switch-right a {
+  display: inline-block;
+  width: 58px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 20px;
+  border: #d8d8d8 1px solid;
+  text-align: center;
+}
+.playMain .mainRight .switch .switch-right .next-page:hover {
+  color: #1a9eff;
+  border-color: #1a9eff;
+}
+.line {
+  height: 0px;
+  border-bottom: 1px solid #1a9eff;
+}
+.links {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #989898;
+}
+.links a:hover {
+  text-decoration: underline;
+  color: #1a9eff;
+}
+.blue {
+  color: #1a9eff!important;
+  border-bottom: #1a9eff 1px solid;
+}
+.grey {
+  border-bottom: #3a3a3e 1px solid;
+}
+.zan-num{
+  color:#1a9eff;
+}
+
+.up {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #d3d4d5;
+  position: fixed;
+  right: 0;
+  bottom: 22px;
+  cursor: pointer;
+  background: url(../image/icon_new.png) 0 0;
+}
+.up:hover {
+  background: url(../image/icon_new.png) -52px 0;
+}
+.play-window{
+  outline: 0;
+  cursor: pointer;
+}
